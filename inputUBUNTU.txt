@@ -1,0 +1,25 @@
+CSE534, Tue, 8:20, Thu, 8:20
+CSE532, Tue, 17:20, Thu, 17:20
+CSE537, Tue, 12:50, Thu 12:50
+
+CSE534, Wed, 10:40
+CSE532, Mon, 11:35
+CSE537, Wed, 12:50
+
+CSE534, 42, YES
+CSE532, 45, NO
+CSE537, 46, NO
+
+CSE534, NS2, Java
+CSE532, SQL, ObjectiveC
+CSE537, PROLOG, Django
+
+TA_A, Tue, 6:50, Mon, 17:20, Tue, 17:20 ,Wed, 17:20, Thu, 17:20, Fri, 12:50
+TA_B, Tue, 8:20, Thu, 8:20, Mon, 13:50, Wed, 13:50, Tue, 14:20, Thu, 14:20
+TA_C, Mon, 12:50, Fri, 12:50, Tue, 14:20, Thu, 14:20, Tue, 17:20, Thu, 17:20
+TA_D,
+
+TA_A, NS2, SQL, Java
+TA_B, PROLOG, SQL, ObjectiveC, CSE537
+TA_C, JAVA, SQL, PROLOG, ObjectiveC, Django, ObjectiveC
+TA_D, NS2, SQL, PROLOG, Java, ObjectiveC, Django

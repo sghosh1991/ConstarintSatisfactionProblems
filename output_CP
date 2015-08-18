@@ -1,0 +1,223 @@
+In assign
+In buildAvail
+*********AvailDict************
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_C0': ['CSE537'], 'TA_C1': ['CSE537'], 'TA_B1': ['CSE532'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+building TAReqs key : CSE532, value [('Tue 17:20', 'Thu 17:20'), ('Mon 11:35',), 3, 'NO', ('SQL', 'ObjectiveC')], number of TA is : 3
+
+*******TAReq*********
+{'CSE532': 3}
+building TAReqs key : CSE537, value [('Tue 12:50',), ('Wed 12:50',), 3, 'NO', ('PROLOG', 'Django')], number of TA is : 3
+
+*******TAReq*********
+{'CSE532': 3, 'CSE537': 3}
+building TAReqs key : CSE534, value [('Tue 8:20', 'Thu 8:20'), ('Wed 10:40',), 3, 'YES', ('NS2', 'Java')], number of TA is : 3
+
+*******TAReq*********
+{'CSE532': 3, 'CSE537': 3, 'CSE534': 3}
+
+
+
+inside SatBTFC
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_C0': ['CSE537'], 'TA_C1': ['CSE537'], 'TA_B1': ['CSE532'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+TA_C0
+minKey : TA_C0, Ckey : CSE537
+TADistDict is:
+{'TA_C0': 'CSE537'}
+Calling satbtfc for :
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_C1': ['CSE537'], 'TA_B1': ['CSE532'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+{'CSE532': 3, 'CSE537': 2, 'CSE534': 3}
+
+
+
+inside SatBTFC
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_C1': ['CSE537'], 'TA_B1': ['CSE532'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+TA_C1
+minKey : TA_C1, Ckey : CSE537
+TADistDict is:
+{'TA_C0': 'CSE537', 'TA_C1': 'CSE537'}
+Calling satbtfc for :
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_B1': ['CSE532'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+{'CSE532': 3, 'CSE537': 1, 'CSE534': 3}
+
+
+
+inside SatBTFC
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_B1': ['CSE532'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+TA_B1
+minKey : TA_B1, Ckey : CSE532
+TADistDict is:
+{'TA_B1': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537'}
+Calling satbtfc for :
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+{'CSE532': 2, 'CSE537': 1, 'CSE534': 3}
+
+
+
+inside SatBTFC
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_B0': ['CSE532'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+TA_B0
+minKey : TA_B0, Ckey : CSE532
+TADistDict is:
+{'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537'}
+Calling satbtfc for :
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+{'CSE532': 1, 'CSE537': 1, 'CSE534': 3}
+
+
+
+inside SatBTFC
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_A0': ['CSE534'], 'TA_A1': ['CSE534']}
+TA_A0
+minKey : TA_A0, Ckey : CSE534
+TADistDict is:
+{'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_A0': 'CSE534'}
+Calling satbtfc for :
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_A1': ['CSE534']}
+{'CSE532': 1, 'CSE537': 1, 'CSE534': 2}
+
+
+
+inside SatBTFC
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537'], 'TA_A1': ['CSE534']}
+TA_A1
+minKey : TA_A1, Ckey : CSE534
+TADistDict is:
+{'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Calling satbtfc for :
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537']}
+{'CSE532': 1, 'CSE537': 1, 'CSE534': 1}
+
+
+
+inside SatBTFC
+{'TA_D1': ['CSE532', 'CSE534', 'CSE537'], 'TA_D0': ['CSE532', 'CSE534', 'CSE537']}
+TA_D1
+minKey : TA_D1, Ckey : CSE532
+TADistDict is:
+{'TA_D1': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+availDictNext:[TA_D0]=['CSE532', 'CSE534', 'CSE537']
+Calling satbtfc for :
+{'TA_D0': ['CSE534', 'CSE537']}
+{'CSE537': 1, 'CSE534': 1}
+
+
+
+inside SatBTFC
+{'TA_D0': ['CSE534', 'CSE537']}
+TA_D0
+minKey : TA_D0, Ckey : CSE534
+TADistDict is:
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+End of tree reached
+--------------------------------------------------------------------
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Success Finally
+--------------------------------------------------------------------
+minKey : TA_D0, Ckey : CSE537
+TADistDict is:
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+End of tree reached
+--------------------------------------------------------------------
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Success Finally
+--------------------------------------------------------------------
+minKey : TA_D1, Ckey : CSE534
+TADistDict is:
+{'TA_D1': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+availDictNext:[TA_D0]=['CSE532', 'CSE534', 'CSE537']
+Calling satbtfc for :
+{'TA_D0': ['CSE532', 'CSE537']}
+{'CSE532': 1, 'CSE537': 1}
+
+
+
+inside SatBTFC
+{'TA_D0': ['CSE532', 'CSE537']}
+TA_D0
+minKey : TA_D0, Ckey : CSE532
+TADistDict is:
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+End of tree reached
+--------------------------------------------------------------------
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Success Finally
+--------------------------------------------------------------------
+minKey : TA_D0, Ckey : CSE537
+TADistDict is:
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+End of tree reached
+--------------------------------------------------------------------
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Success Finally
+--------------------------------------------------------------------
+minKey : TA_D1, Ckey : CSE537
+TADistDict is:
+{'TA_D1': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+availDictNext:[TA_D0]=['CSE532', 'CSE534', 'CSE537']
+Calling satbtfc for :
+{'TA_D0': ['CSE532', 'CSE534']}
+{'CSE532': 1, 'CSE534': 1}
+
+
+
+inside SatBTFC
+{'TA_D0': ['CSE532', 'CSE534']}
+TA_D0
+minKey : TA_D0, Ckey : CSE532
+TADistDict is:
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+End of tree reached
+--------------------------------------------------------------------
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Success Finally
+--------------------------------------------------------------------
+minKey : TA_D0, Ckey : CSE534
+TADistDict is:
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+End of tree reached
+--------------------------------------------------------------------
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Success Finally
+--------------------------------------------------------------------
+Final Assignments:
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+time taken :
+0.001086
+
++++++++Assign List+++++
+
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE532', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE534', 'TA_D0': 'CSE537', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE532', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+{'TA_D1': 'CSE537', 'TA_D0': 'CSE534', 'TA_C0': 'CSE537', 'TA_C1': 'CSE537', 'TA_B1': 'CSE532', 'TA_B0': 'CSE532', 'TA_A0': 'CSE534', 'TA_A1': 'CSE534'}
+Assignment 0
+{'TA_D': [['CSE532', 0.5], ['CSE534', 0.5]], 'TA_A': [['CSE534', 1.0]], 'TA_B': [['CSE532', 1.0]], 'TA_C': [['CSE537', 1.0]]}
+{'CSE532': [['TA_D', 0.5]], 'CSE537': [['TA_C', 1.0]], 'CSE534': [['TA_D', 0.5]]}
+
+Assignment 1
+{'TA_D': [['CSE532', 0.5], ['CSE537', 0.5]], 'TA_A': [['CSE534', 1.0]], 'TA_B': [['CSE532', 1.0]], 'TA_C': [['CSE537', 1.0]]}
+{'CSE532': [['TA_D', 0.5]], 'CSE537': [['TA_D', 0.5], ['TA_C', 1.0]], 'CSE534': [['TA_A', 1.0]]}
+
+Assignment 2
+{'TA_D': [['CSE534', 0.5], ['CSE532', 0.5]], 'TA_A': [['CSE534', 1.0]], 'TA_B': [['CSE532', 1.0]], 'TA_C': [['CSE537', 1.0]]}
+{'CSE532': [['TA_D', 0.5]], 'CSE537': [['TA_C', 1.0]], 'CSE534': [['TA_D', 0.5]]}
+
+Assignment 3
+{'TA_D': [['CSE534', 0.5], ['CSE537', 0.5]], 'TA_A': [['CSE534', 1.0]], 'TA_B': [['CSE532', 1.0]], 'TA_C': [['CSE537', 1.0]]}
+{'CSE532': [['TA_B', 1.0]], 'CSE537': [['TA_D', 0.5], ['TA_C', 1.0]], 'CSE534': [['TA_D', 0.5]]}
+
+Assignment 4
+{'TA_D': [['CSE537', 0.5], ['CSE532', 0.5]], 'TA_A': [['CSE534', 1.0]], 'TA_B': [['CSE532', 1.0]], 'TA_C': [['CSE537', 1.0]]}
+{'CSE532': [['TA_D', 0.5]], 'CSE537': [['TA_D', 0.5], ['TA_C', 1.0]], 'CSE534': [['TA_A', 1.0]]}
+
+Assignment 5
+{'TA_D': [['CSE537', 0.5], ['CSE534', 0.5]], 'TA_A': [['CSE534', 1.0]], 'TA_B': [['CSE532', 1.0]], 'TA_C': [['CSE537', 1.0]]}
+{'CSE532': [['TA_B', 1.0]], 'CSE537': [['TA_D', 0.5], ['TA_C', 1.0]], 'CSE534': [['TA_D', 0.5]]}
+
